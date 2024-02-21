@@ -1,0 +1,248 @@
+
+/*some default css*/
+html,
+body {
+    background-color: darkgreen;
+    margin: auto;
+    height: 100%;
+    border-width: 2em;
+    border-color: antiquewhite;
+}
+
+/*Mainly affects the "dealer's cards" & "Player's cards" headings*/
+h1 {
+    border-color: white;
+    border-width: 2px;
+    margin-left: 4px;
+}
+
+/*this is the container holding **all content** centered*/
+.content {
+    border-style: solid;
+    max-width: 70%;
+    padding: 10px;
+    margin-top: 40px;
+    height: 100%;
+    margin: auto;
+    border-width: 0.1em;
+    border-color: white;
+
+}
+/*specifically affects all p on html form*/
+p {
+    color: white;
+    padding-left: 5%;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    word-break: break-all;
+    display: inline-block;
+    height: auto;
+}
+/*specifically affects the buttons*/
+button {
+    margin-right: 1em;
+    margin-top: 2em;
+    border-radius: 10%;
+    padding: 10px;
+    padding-right: 10px;
+}
+
+/*this is the h1 header font*/
+#header_move {
+    color: whitesmoke;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+
+}
+/*this holds all of the upper tier divs*/
+.info {
+    display: block;
+    height: 20%;
+    margin: auto;
+    width: 100%;
+
+
+}
+
+/*acts similarly to column:its third*/
+#inner_stats {
+    float: left;
+    margin: auto;
+
+    color: whitesmoke;
+    border-color: white;
+    height: 100%;
+    width: 40%;
+}
+/*To make sure that the stats float to the righthand side of the inner_stats div*/
+#inner_heads {
+    color: whitesmoke;
+    float: right;
+}
+
+/*this holds the top left buttons*/
+#buttons {
+    float: left;
+    width: 30%;
+    height: 100%;
+
+}
+
+/*This holds the right hand top corner stat information*/
+#stats {
+    float: left;
+    width: 30%;
+    height: 100%;
+
+
+}
+
+/*left and right columns of the card table*/
+.column {
+    height: 100%;
+    width: 25%;
+    float: left;
+}
+/*div holding the card table*/
+.cards {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+/*this is the entire bottom section of the card table*/
+.card-area-total {
+    margin-top: 40px;
+    display: block;
+    height: 80%;
+    margin: auto;
+}
+/*this is the card area for the back deck card*/
+.card-area-1 {
+
+    padding-top: 30px;
+    width: 100%;
+    margin: auto;
+
+}
+
+
+
+/*This is the center div */
+.card-area {
+    background-color: whitesmoke;
+    border-width: 2px;
+    border-color: white;
+    display: block;
+    height: 30%;
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+}
+
+/*card class shared for both sets of cards*/
+.card {
+    margin: auto;
+    padding-top: 20px;
+    border-color: white;
+    border-width: 2px;
+
+    transition: 0.3s;
+    height: 75%;
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: darkgreen;
+    padding-bottom: 10px;
+
+}
+
+/*This is for the users cards images*/
+#myImg {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    height: 100%;
+    width: 80%;
+}
+
+/*This is the robot cards id*/
+#roboImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    height: 100%;
+    width: 80%;
+    
+}
+/*This affects all images, even the back image card*/
+img {
+    margin: 10px;
+    width: 20%;
+    height: 100%;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 10px;
+    
+}
+
+/*The back card is set to this value*/
+#backs{
+    width: 15%;
+}
+
+/*Player number of wins*/
+#player_wins {
+    color: whitesmoke;
+}
+
+/*Number of losses for player*/
+#player_loss {
+    color: whitesmoke;
+}
+
+/*This pops up when the player wins or loses*/
+#round_status {
+    padding-top: 10%;
+    margin: auto;
+    width: 75%;
+    -webkit-text-stroke: 0.5px white;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/*This displays the cards the player plays in text form*/
+#player_div{
+    float: left;
+    
+    width: 100%;
+    height: 30%;
+    padding-top: 30%;
+    
+}
+
+/*This displays the dealers cards in text form*/
+#dealer_div{
+    float: left;
+   
+    width: 100%;
+    height: 30%;
+    padding-top: 20%;
+    
+    
+}
+
